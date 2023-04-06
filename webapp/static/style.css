@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+nav {
+    /* background-color: #ECF9FF; */
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+nav h1 {
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0.9rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .active {
+    border-bottom: 2px solid red;
+}
+
+nav ul li a:hover {
+    color:red;
+    border-bottom: 2px solid red;
+} */
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.nav-links li:hover:after {
+  width: 100%;
+  background: black;
+}
+
+.nav-links li:nth-child(2):after {
+  width: 100%;
+  background: none;
+}
+
+
+.diagnose-btn {
+    font-size:20px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: 'Heebo', sans-serif;
+    transition: all 1s;
+}
+
+.diagnose-btn:hover {
+    background: #11998e;  
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+    background: linear-gradient(to right, #38ef7d, #11998e); 
+    color:#ECF9FF;
+}
+
+/* Hero section */
+
+.main-div{
+    margin: auto;
+   padding-top: auto;
+    background: #7F7FD5;  
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 20px;
+    padding-top: 95px;
+    height: auto
+}
+
+
+.main-div p{
+    padding-bottom: 30px;
+    width: 30%;
+}
+
+/* Getting started */
+
+.get-started {
+    /* background-color: #FFFBEB; */
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Heebo', sans-serif;
+    align-items: center;
+    font-size: 30px;
+}
+
+.get-started h1{
+    padding: 20px;
+}
+
+.get-started ol li {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.get-started {
+    padding-bottom: 50px;
+}
+
+.note{
+    color: red;
+    font-weight: 500;
+}
+/* Footer */
+
+footer{
+    background: #7F7FD5;  
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+    }
+
+    nav{
+        font-size: 1rem;
+    }
+
+    .main-div{
+        padding-top: 8rem;
+        font-size: 0.8rem;
+    }
+
+    .main-div p{
+        width: 50%;
+    }
+
+    .diagnose-btn {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 2px 5px;
+        border-radius: 4px;
+    }
+
+    /* get started */
+
+    .get-started{
+        font-size: 1rem;
+    }
+
+    .get-started ol li{
+        font-size: 1rem;
+    }
+
+    /* Footer */
+
+    footer{
+        font-size: 1rem;
+    }
+
+  }

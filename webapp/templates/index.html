@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h1>DetectX</h1>
+        <ul class="nav-links">
+            <li class=""><a href="#get-started">Instructions</a></li>
+            <li class="none"><button class="diagnose-btn" onclick="location.href = '{{ url_for('diagnose') }}'">Diagnose Now!</button></li>
+            <li class="none"><button class="open-iframe-btn" onclick="window.open('https://bot.dialogflow.com/28a93c1b-32ad-4333-b92b-f5d9ccb6837e', 'newwindow', 'width=400,height=500'); return false;">Open Chatbot</button></li>
+        </ul>
+    </nav>
+    <section class="main-div">
+            <p><strong>DetectX</strong> is a  platform that utilizes advanced machine learning algorithms to accurately predict the likelihood of a patient having pneumonia. 
+            DetectX offers a convenient, reliable, and efficient solution for the early detection and management of pneumonia, helping to improve patient outcomes and support public health efforts.</p>
+            <button class="diagnose-btn" onclick="location.href = '{{ url_for('diagnose') }}'">Diagnose Now!</button>
+
+    </section>
+    <section class="get-started" id="get-started">
+        <h1>How to get started</h1>
+        <ol>
+            <li>Click on the <strong>Diagnose Now</strong> button provided in navbar</li>
+            <li>Select your X-ray image by clicking the <strong>select file</strong> button <br><p class="note">(Note: The file must be in image(i.e jpeg or jpg) format and not in pdf, word etc)</p></li>
+            <li>Submit your file by clicking <strong>Submit button</strong></li>
+            <li>Wait for the response to be generated</li>
+        </ol>
+    </section>
+    <footer>
+        <p>Created By Alex, Kevin, Allan & kris</p>
+    </footer>
+</body>
+</html>
